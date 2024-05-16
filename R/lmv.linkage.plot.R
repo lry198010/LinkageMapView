@@ -1375,8 +1375,9 @@ lmv.linkage.plot <- function(mapthis,
   # --- End loop for nbr rows to draw linkage groups -----------------
 
   # if density map legend to be displayed
-  if (denmap &
-      !is.null(sectcoldf$dens)) {
+  if (FALSE){
+  # if (denmap &
+  #    !is.null(sectcoldf$dens)) {
     # plot legend is last row
     # na.last removes NAs
     leg <- sectcoldf[order(sectcoldf$dens,na.last=NA), ]
